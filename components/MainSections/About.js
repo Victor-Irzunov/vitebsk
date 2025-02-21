@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export const About = () => {
 	return (
-		<section className='bg-[#F6F7F8] py-16 relative'>
+		<section className='bg-[#F6F7F8] py-16 relative' id="about">
 			<div className='container mx-auto'>
 
 				<div className='grid sd:grid-cols-2 xz:grid-cols-1 gap-4'>

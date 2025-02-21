@@ -31,7 +31,7 @@ const Preimushestva = () => {
                 <h2 className='sd:text-5xl xz:text-3xl text-center uppercase'>
                     <span className="sd:text-2xl xz:text-lg block">
                         наши
-                    </span>
+                    </span>{' '}
                     Преимущества <span className="sr-only">по ремонту стиральных машин</span>
                 </h2>
                 <div className='grid sd:grid-cols-4 xz:grid-cols-1 gap-4 mt-9'>

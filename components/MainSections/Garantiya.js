@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const Garantiya = () => {
 	return (
-		<section className='sd:py-16 xz:py-7 relative bg-white'>
+		<section className='sd:py-16 xz:py-7 relative bg-white' id="garantiya">
 			<div className='container mx-auto border-8 border-primary bg-primary/10 sd:p-10 xz:p-5'>
 				<h2 className='sd:text-5xl xz:text-3xl font-semibold'>
 					Гарантийная и постгарантийная поддержка

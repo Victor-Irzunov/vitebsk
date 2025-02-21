@@ -59,7 +59,7 @@ const questionsAndAnswers = [
 
 const VoprosOtvet = () => {
 	return (
-		<section className='relative py-16 bg-white/70'>
+		<section className='relative py-16 bg-white/70' id="voprosotvet">
 			<div className='container mx-auto px-0 sd:px-12'>
 				<h2 className='sd:text-5xl xz:text-3xl font-semibold'>
 					Вопросы и ответы <span className="font-normal">по ремонту стиральной машины</span>

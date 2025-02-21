@@ -24,7 +24,7 @@ const Price = () => {
     ];
 
     return (
-        <section className='py-16 relative bg-[#F6F7F8]'>
+        <section className='py-16 relative bg-[#F6F7F8]' id="price">
             <div className='container mx-auto'>
                 <h2 className='sd:text-5xl xz:text-3xl text-center'>
                     Цены на ремонт стиральных машин

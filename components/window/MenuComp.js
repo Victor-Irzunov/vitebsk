@@ -2,7 +2,7 @@ import {
 	motion
 } from "framer-motion";
 import { yCustomAnimation2 } from '@/constans/animation/AnimationConst'
-import Link from "next/link";
+import { Link as LinkScroll } from 'react-scroll';
 
 const MenuComp = ({ setIsOpen }) => {
 	return (
@@ -27,48 +27,73 @@ const MenuComp = ({ setIsOpen }) => {
 						custom={1}
 						variants={yCustomAnimation2}
 					>
-						<Link href={`/`}
-							className="block mb-2 font-light text-lg"
+
+						<LinkScroll
+							to="main"
+							smooth={true}
+							offset={-100}
+							duration={800}
+							className="cursor-pointer block mb-2 font-light text-lg"
+							rel="nofollow"
+							href="#/"
 							onClick={() => setIsOpen(false)}
 						>
 							Главная
-						</Link>
+						</LinkScroll>
 					</motion.li>
 					<motion.li
 						className='sd:mb-5 xz:mb-3 border-b border-gray-600 border-dashed pb-2'
 						custom={2}
 						variants={yCustomAnimation2}
 					>
-						<Link href={`/`}
-							className="block mb-2 font-light text-lg"
+						<LinkScroll
+							to="price"
+							smooth={true}
+							offset={-100}
+							duration={800}
+							className="cursor-pointer block mb-2 font-light text-lg"
+							rel="nofollow"
+							href="#/"
 							onClick={() => setIsOpen(false)}
 						>
-							Главная
-						</Link>
+							Цены
+						</LinkScroll>
 					</motion.li>
 					<motion.li
 						className='sd:mb-5 xz:mb-3 border-b border-gray-600 border-dashed pb-2'
 						custom={3}
 						variants={yCustomAnimation2}
 					>
-						<Link href={`/`}
-							className="block mb-2 font-light text-lg"
+						<LinkScroll
+							to="about"
+							smooth={true}
+							offset={-100}
+							duration={800}
+							className="cursor-pointer block mb-2 font-light text-lg"
+							rel="nofollow"
+							href="#/"
 							onClick={() => setIsOpen(false)}
 						>
-							Главная
-						</Link>
+							О нас
+						</LinkScroll>
 					</motion.li>
 					<motion.li
 						className='sd:mb-5 xz:mb-3 border-b border-gray-600 border-dashed pb-2 pl-1'
 						custom={4}
 						variants={yCustomAnimation2}
 					>
-						<Link href={`/`}
-							className="block mb-2 font-light text-lg"
+						<LinkScroll
+							to="otzyvy"
+							smooth={true}
+							offset={-100}
+							duration={800}
+							className="cursor-pointer block mb-2 font-light text-lg"
+							rel="nofollow"
+							href="#/"
 							onClick={() => setIsOpen(false)}
 						>
-							Главная
-						</Link>
+							Отзывы
+						</LinkScroll>
 					</motion.li>
 
 					<motion.li
@@ -76,24 +101,55 @@ const MenuComp = ({ setIsOpen }) => {
 						custom={5}
 						variants={yCustomAnimation2}
 					>
-						<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/about`}
-							className="block mb-2 font-light text-lg"
+						<LinkScroll
+							to="voprosotvet"
+							smooth={true}
+							offset={-100}
+							duration={800}
+							className="cursor-pointer block mb-2 font-light text-lg"
+							rel="nofollow"
+							href="#/"
 							onClick={() => setIsOpen(false)}
 						>
-							О нас
-						</Link>
+							Вопрос-ответ
+						</LinkScroll>
+					</motion.li>
+
+					<motion.li
+						className='sd:mb-5 xz:mb-3 border-b border-gray-600 text-lg font-light border-dashed pb-2 pl-1'
+						custom={5}
+						variants={yCustomAnimation2}
+					>
+						<LinkScroll
+							to="garantiya"
+							smooth={true}
+							offset={-100}
+							duration={800}
+							className="cursor-pointer block mb-2 font-light text-lg"
+							rel="nofollow"
+							href="#/"
+							onClick={() => setIsOpen(false)}
+						>
+							Гарантия
+						</LinkScroll>
 					</motion.li>
 					<motion.li
 						className='sd:mb-5 xz:mb-3  pl-1 text-lg font-light'
 						custom={6}
 						variants={yCustomAnimation2}
 					>
-						<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/kontakty`}
-							className="block mb-2 font-light text-lg"
+						<LinkScroll
+							to="contacts"
+							smooth={true}
+							offset={-100}
+							duration={800}
+							className="cursor-pointer block font-light text-lg"
+							rel="nofollow"
+							href="#/"
 							onClick={() => setIsOpen(false)}
 						>
 							Контакты
-						</Link>
+						</LinkScroll>
 					</motion.li>
 				</ul>
 
